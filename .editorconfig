@@ -43,11 +43,9 @@ dotnet_style_require_accessibility_modifiers = for_non_interface_members:suggest
 
 #Style - Modifier preferences
 
-#when this rule is set to a list of modifiers, prefer the specified ordering.
-csharp_preferred_modifier_order = static,async,public:suggestion
 
 [*.{cs,vb}]
-dotnet_style_qualification_for_field=false:suggestion
-dotnet_style_qualification_for_property=false:suggestion
-dotnet_style_qualification_for_method=false:suggestion
-dotnet_style_qualification_for_event=false:suggestion
+dotnet_style_qualification_for_field=true:suggestion
+dotnet_style_qualification_for_property=true:suggestion
+dotnet_style_qualification_for_method=true:suggestion
+dotnet_style_qualification_for_event=true:suggestion
