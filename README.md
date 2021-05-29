@@ -1,2 +1,13 @@
 # Budget
-Track personal bank accounts and transactions.
+Keep track of personal bank accounts and transactions.
+
+## Build
+
+## Run
+
+## Test
+
+## Release
+
+## Contribute
+
