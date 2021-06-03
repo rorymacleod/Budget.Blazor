@@ -3,18 +3,21 @@ using Cake.Core;
 using Cake.Core.IO;
 using Cake.Frosting;
 
-public class BuildContext : FrostingContext
+namespace Budget.Build
 {
-    public string BuildConfiguration { get; set; }
-    public string BuildPlatform { get; set; }
-    public FilePath SolutionPath { get; set; }
-    public DirectoryPath SolutionDir { get; set; }
-    public string SolutionName { get; set; }
-
-    public BuildContext(ICakeContext context)
-        : base(context)
+    public class BuildContext : FrostingContext
     {
-        this.BuildConfiguration = context.Argument("configuration", "Release");
-        this.BuildPlatform = context.Argument("platform", "Any CPU");
+        public string BuildConfiguration { get; set; }
+        public string BuildPlatform { get; set; }
+        public FilePath SolutionPath { get; set; }
+        public DirectoryPath SolutionDir { get; set; }
+        public string SolutionName { get; set; }
+
+        public BuildContext(ICakeContext context)
+            : base(context)
+        {
+            this.BuildConfiguration = context.Argument("configuration", "Release");
+            this.BuildPlatform = context.Argument("platform", "Any CPU");
+        }
     }
 }
